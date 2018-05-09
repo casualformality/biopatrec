@@ -93,7 +93,7 @@ function GUI_Recordings_OpeningFcn(hObject, eventdata, handles, varargin)
 % varargin   command line arguments to GUI_Recordings (see VARARGIN)
 
 %load the background image into Matlab
-backgroundImage2 = importdata('/../Img/BioPatRec.png');
+backgroundImage2 = importdata('Img/BioPatRec.png');
 %select the axes
 axes(handles.a_biopatrec);
 %place image onto the axes

@@ -88,7 +88,7 @@ function GUI_AFEselection_OpeningFcn(hObject, eventdata, handles, varargin)
 % handles
 
 %load the background image into Matlab
-backgroundImage2 = importdata('/../Img/BioPatRec.png');
+backgroundImage2 = importdata('Img/BioPatRec.png');
 %select the axes
 axes(handles.axes1);
 %place image onto the axes

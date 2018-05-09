@@ -76,7 +76,7 @@ function GUI_RecordingSessionShow_OpeningFcn(hObject, eventdata, handles, vararg
 % handles    structure with handles and user data (see GUIDATA)
 % varargin   command line arguments to GUI_RecordingSessionShow (see VARARGIN)
 
-backgroundImage2 = importdata('/../Img/BioPatRec.png');
+backgroundImage2 = importdata('Img/BioPatRec.png');
 %select the axes
 axes(handles.axes2);
 %place image onto the axes
@@ -87,7 +87,7 @@ axis off
 %load the background image into Matlab
 %if image is not in the same directory as the GUI files, you must use the 
 %full path name of the iamge file
-backgroundImage = importdata('/../Img/relax.jpg');
+backgroundImage = importdata('Img/relax.jpg');
 %select the axes
 axes(handles.axes1);
 %place image onto the axes

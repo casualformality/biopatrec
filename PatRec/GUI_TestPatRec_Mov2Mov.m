@@ -152,7 +152,7 @@ if ~isempty(varargin)
 end
 
 % Logo image
-backgroundImage2 = importdata('/../Img/BioPatRec.png');
+backgroundImage2 = importdata('Img/BioPatRec.png');
 %select the axes
 axes(handles.axes3);
 %place image onto the axes

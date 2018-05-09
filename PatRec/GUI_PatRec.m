@@ -81,7 +81,7 @@ function GUI_PatRec_OpeningFcn(hObject, eventdata, handles, varargin)
 
 set(handles.bg_featuresSelect,'SelectionChangeFcn',@bg_featuresSelect_SelectionChangeFcn);
 
-backgroundImage2 = importdata('/../Img/BioPatRec.png');
+backgroundImage2 = importdata('Img/BioPatRec.png');
 %select the axes
 axes(handles.axes1);
 %place image onto the axes
@@ -173,12 +173,12 @@ function pb_GetFeatures_Callback(hObject, eventdata, handles)
                 set(handles.pm_normSets,'Enable','off'); 
     %           set(handles.pb_RealtimePatRec,'Enable','on');    
     %           set(handles.pb_motionTest,'Enable','on');        
-                set(handles.pb_RealtimePatRecGUI,'Enable','on');
+    %           set(handles.pb_RealtimePatRecGUI,'Enable','on');
                 %Added to enable Mov2Mov-button after loading PatRec
                 set(handles.pb_RealtimePatRecMov2Mov,'Enable','on');
                 %Load all values from the patRec into the GUI.
-                set(handles.et_accuracy,'String',num2str(patRec.acc(end)));
-                set(handles.lb_accuracy,'String',num2str(patRec.acc(1:end-1)));        
+                set(handles.et_accuracy,'String',num2str(patRec.patRecTrained.accV(end)));
+                set(handles.lb_accuracy,'String',num2str(patRec.patRecTrained.accV(1:end-1)'));        
                 set(handles.et_trTime,'String',num2str(patRec.trTime));
                 set(handles.et_tTime,'String',num2str(patRec.tTime));
                 disp('%%%%%%%%%%% patRec loaded %%%%%%%%%%%%%');

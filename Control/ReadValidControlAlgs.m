@@ -41,7 +41,7 @@
 % 20xx-xx-xx / Author  / Comment on update
 
 function controlAlgs = ReadValidControlAlgs()
-fid = fopen('/Control/ValidControlAlgs.txt');
+fid = fopen('Control/ValidControlAlgs.txt');
 
 controlAlgs = [];
 
